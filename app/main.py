@@ -21,4 +21,4 @@ def healthz():
 @app.get("/echo", response_class=HTMLResponse)
 def echo(x: str = ""):
     # намеренно без экранирования - упрощённая цель для ZAP
-    return HTMLResponse(f"<h1>ECHO</h1><div>you said: {x}</div>")
+    return HTMLResponse(f"<h1>ECHO</h1><div>you said: {x}</div>") 
